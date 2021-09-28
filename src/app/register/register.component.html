@@ -1,0 +1,26 @@
+<div class="login-div">
+    <h1>{{aim}}</h1>
+        <div class="col">
+            <h2 style="text-align: center;">Register here</h2>
+            <form (ngSubmit)="register()">
+             <div class="input-group mb-5">
+                <input type="text" class="form-control" name="acno" id="acno"  placeholder="Account Number"  [(ngModel)]="acno" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group mb-5">
+                <input type="text" class="form-control" name="uname" id="uname"  placeholder="UserName"  [(ngModel)]="uname" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group mb-5">
+                <input type="password" class="form-control" name="pwd" id="pwd"  placeholder="Password" aria-label="password" [(ngModel)]="pwd" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group mb-3">
+                <p style="color: red;" id="error"></p>  
+              </div>
+              <div class="login-btn">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </form>
+              
+        </div>
+
+   
+</div>
